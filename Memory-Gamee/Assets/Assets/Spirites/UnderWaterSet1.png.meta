@@ -125,7 +125,7 @@ TextureImporter:
         width: 429
         height: 429
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -138,15 +138,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UnderWaterSet1_1
+      name: SeaHorse
       rect:
         serializedVersion: 2
         x: 521
-        y: 1005
-        width: 428
-        height: 428
+        y: 1013
+        width: 424
+        height: 416
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -159,15 +159,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UnderWaterSet1_2
+      name: Fish1
       rect:
         serializedVersion: 2
-        x: 1036
-        y: 1005
-        width: 428
-        height: 428
+        x: 1045
+        y: 1012
+        width: 415
+        height: 417
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -180,15 +180,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UnderWaterSet1_3
+      name: CardFace2
       rect:
         serializedVersion: 2
-        x: 1574
-        y: 1005
-        width: 428
-        height: 428
+        x: 1584
+        y: 1014
+        width: 410
+        height: 415
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -201,15 +201,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UnderWaterSet1_4
+      name: Emptycard2
       rect:
         serializedVersion: 2
-        x: 2071
-        y: 1004
-        width: 429
-        height: 429
+        x: 2078
+        y: 1012
+        width: 416
+        height: 413
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -225,12 +225,12 @@ TextureImporter:
       name: UnderWaterSet1_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 484
-        width: 428
-        height: 428
+        x: 26
+        y: 498
+        width: 394
+        height: 391
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -243,15 +243,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UnderWaterSet1_6
+      name: Clownfish
       rect:
         serializedVersion: 2
-        x: 519
-        y: 486
-        width: 428
-        height: 428
+        x: 529
+        y: 492
+        width: 412
+        height: 414
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -264,15 +264,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UnderWaterSet1_7
+      name: SparkFish
       rect:
         serializedVersion: 2
-        x: 1036
-        y: 486
-        width: 428
-        height: 428
+        x: 1043
+        y: 494
+        width: 414
+        height: 413
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -285,15 +285,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UnderWaterSet1_8
+      name: octopus
       rect:
         serializedVersion: 2
-        x: 1573
-        y: 486
-        width: 428
-        height: 428
+        x: 1582
+        y: 492
+        width: 413
+        height: 414
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -306,15 +306,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UnderWaterSet1_9
+      name: 2EyesFish
       rect:
         serializedVersion: 2
-        x: 2071
-        y: 486
-        width: 428
-        height: 428
+        x: 2077
+        y: 495
+        width: 413
+        height: 419
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -327,15 +327,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UnderWaterSet1_10
+      name: CardFace1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 429
-        height: 429
+        x: 13
+        y: 14
+        width: 404
+        height: 400
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -348,15 +348,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UnderWaterSet1_11
+      name: Shark
       rect:
         serializedVersion: 2
-        x: 505
-        y: 0
-        width: 428
-        height: 428
+        x: 512
+        y: 6
+        width: 415
+        height: 418
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -369,15 +369,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UnderWaterSet1_12
+      name: OneEyeFish
       rect:
         serializedVersion: 2
-        x: 1020
-        y: 0
-        width: 428
-        height: 428
+        x: 1028
+        y: 5
+        width: 414
+        height: 418
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -390,15 +390,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UnderWaterSet1_13
+      name: OrangeEyeFish
       rect:
         serializedVersion: 2
-        x: 1551
-        y: 0
-        width: 428
-        height: 428
+        x: 1559
+        y: 9
+        width: 415
+        height: 413
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -411,15 +411,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UnderWaterSet1_14
+      name: StarFish
       rect:
         serializedVersion: 2
-        x: 2071
-        y: 0
-        width: 428
-        height: 428
+        x: 2078
+        y: 5
+        width: 416
+        height: 416
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -442,21 +442,21 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      UnderWaterSet1_8: -857431578
-      UnderWaterSet1_6: 2023419633
-      UnderWaterSet1_14: 2129526407
+      CardFace2: 681630569
       UnderWaterSet1_5: -488105114
-      UnderWaterSet1_11: -1863239557
-      UnderWaterSet1_7: -780403124
-      UnderWaterSet1_10: 1703758297
-      UnderWaterSet1_3: 681630569
-      UnderWaterSet1_9: -1152556006
-      UnderWaterSet1_1: 928413973
-      UnderWaterSet1_0: -350257221
-      UnderWaterSet1_2: 560280196
-      UnderWaterSet1_12: 892640764
-      UnderWaterSet1_13: -129858719
-      UnderWaterSet1_4: -1351722917
+      OrangeEyeFish: -129858719
+      CardFace1: 1703758297
+      Shark: -1863239557
+      Fish1: 560280196
+      Clownfish: 2023419633
+      SeaHorse: 928413973
+      UnderWaterSet1_0: 892640764
+      OneEyeFish: 892640764
+      2EyesFish: -1152556006
+      Emptycard2: -1351722917
+      SparkFish: -780403124
+      octopus: -857431578
+      StarFish: 2129526407
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
