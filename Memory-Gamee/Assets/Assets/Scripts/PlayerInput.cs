@@ -11,8 +11,6 @@ public class PlayerInput : MonoBehaviour
 
     void Update()
     {
-
-
         if (Input.GetMouseButtonDown(0))
         {
             RaycastHit hit;
@@ -20,17 +18,9 @@ public class PlayerInput : MonoBehaviour
 
             if(Physics.Raycast(ray , out hit))
             {
-
                 Debug.Log(hit.transform.gameObject);
-                hit.transform.GetComponent<Animator>().SetBool("FlippedOpen", true);
-
-
+                hit.transform.GetComponent<Card>().FlipOpen(true);
             }
-
-
         }
-
-
-        
     }
 }

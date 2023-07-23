@@ -13,4 +13,10 @@ public class Card : MonoBehaviour
         cardId = _id;
         cardFront.sprite = _sprite;
     }
+
+
+    public void FlipOpen(bool flipped)
+    {
+        anim.SetBool("FlippedOpen", flipped);
+    }
 }
