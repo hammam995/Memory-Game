@@ -11,7 +11,7 @@ public class PlayerInput : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !GameManager.instance.HasPicked())
         {
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -19,7 +19,11 @@ public class PlayerInput : MonoBehaviour
             if(Physics.Raycast(ray , out hit))
             {
                 Debug.Log(hit.transform.gameObject);
-                hit.transform.GetComponent<Card>().FlipOpen(true);
+
+                Card currentCard = hit.transform.GetComponent<Card>();
+                currentCard.FlipOpen(true);
+
+                GameManager.instance.AddCardToPickedlist(currentCard);
             }
         }
     }
