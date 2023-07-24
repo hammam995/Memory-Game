@@ -65,5 +65,9 @@ public class CardManager : MonoBehaviour
         {
             Debug.Log("Error : width * height should be pairAmount * 2"); 
         }
+        if(pairAmount > spriteList.Length) // if the pairs*2 bigger or no equall to previous condition
+        {
+            Debug.Log("To much Pairs");
+        }
     }
 }
