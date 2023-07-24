@@ -19,4 +19,12 @@ public class Card : MonoBehaviour
     {
         anim.SetBool("FlippedOpen", flipped);
     }
+
+
+    public int GetCardId()
+    {
+        return cardId;
+    }
+
+
 }

@@ -24,9 +24,30 @@ public class GameManager : MonoBehaviour
         {
             picked = true;
             // check if we have a match
+            StartCoroutine(CheckMatch());
         }
     }
 
+
+    IEnumerator CheckMatch()
+    {
+        yield return new WaitForSeconds(1.5f);
+        if(pickedCards[0].GetCardId() == pickedCards[1].GetCardId())
+        {
+            // We have a match
+            pickedCards[0].gameObject.SetActive(false);
+            pickedCards[1].gameObject.SetActive(false);
+        }
+        else
+        {
+            pickedCards[0].FlipOpen(false);
+            pickedCards[1].FlipOpen(false);
+        }
+        yield return new WaitForSeconds(1.5f);
+        // clean up
+        picked = false;
+        pickedCards.Clear();
+    }
     public bool HasPicked()
     {
         return picked;

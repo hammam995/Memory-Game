@@ -59,6 +59,11 @@ public class CardManager : MonoBehaviour
         }
     }
 
+
+
+
+   
+
     void OnDrawGizmos() // to make the PairAmount and Width , Height equals and not causing errors
     {
         if(pairAmount*2 != width * height)
