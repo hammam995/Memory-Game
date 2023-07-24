@@ -138,7 +138,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SeaHorse
+      name: 1SeaHorse
       rect:
         serializedVersion: 2
         x: 521
@@ -159,7 +159,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fish1
+      name: 2Fish1
       rect:
         serializedVersion: 2
         x: 1045
@@ -243,7 +243,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Clownfish
+      name: 3Clownfish
       rect:
         serializedVersion: 2
         x: 529
@@ -264,7 +264,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SparkFish
+      name: 4SparkFish
       rect:
         serializedVersion: 2
         x: 1043
@@ -285,7 +285,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: octopus
+      name: 5octopus
       rect:
         serializedVersion: 2
         x: 1582
@@ -306,7 +306,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 2EyesFish
+      name: 6_2EyesFish
       rect:
         serializedVersion: 2
         x: 2077
@@ -348,7 +348,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shark
+      name: 7Shark
       rect:
         serializedVersion: 2
         x: 512
@@ -369,7 +369,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OneEyeFish
+      name: 8OneEyeFish
       rect:
         serializedVersion: 2
         x: 1028
@@ -390,7 +390,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OrangeEyeFish
+      name: 9OrangeEyeFish
       rect:
         serializedVersion: 2
         x: 1559
@@ -411,7 +411,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StarFish
+      name: 10StarFish
       rect:
         serializedVersion: 2
         x: 2078
@@ -442,21 +442,21 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      6_2EyesFish: -1152556006
       CardFace2: 681630569
       UnderWaterSet1_5: -488105114
-      OrangeEyeFish: -129858719
+      3Clownfish: 2023419633
+      1SeaHorse: 928413973
+      4SparkFish: -780403124
       CardFace1: 1703758297
-      Shark: -1863239557
-      Fish1: 560280196
-      Clownfish: 2023419633
-      SeaHorse: 928413973
+      5octopus: -857431578
+      8OneEyeFish: 892640764
+      10StarFish: 2129526407
       UnderWaterSet1_0: 892640764
-      OneEyeFish: 892640764
-      2EyesFish: -1152556006
+      9OrangeEyeFish: -129858719
       Emptycard2: -1351722917
-      SparkFish: -780403124
-      octopus: -857431578
-      StarFish: 2129526407
+      7Shark: -1863239557
+      2Fish1: 560280196
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
