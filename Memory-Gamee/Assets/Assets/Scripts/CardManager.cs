@@ -27,7 +27,6 @@ public class CardManager : MonoBehaviour
         {
             for (int j = 0; j < 2; j++) // this loop to decide how many time we want to repeat the card
             {
-
                 Vector3 pos = Vector3.zero;
                 GameObject newCard = Instantiate(cardPrefab, pos, Quaternion.identity);
                 newCard.GetComponent<Card>().SetCard(i, spriteList[i]);
@@ -45,9 +44,7 @@ public class CardManager : MonoBehaviour
             cardDeck[index] = temp;
         }
 
-
         // Pass out cards on the field
-
         int num = 0;
 
         for(int x = 0; x < width; x++)
@@ -59,6 +56,14 @@ public class CardManager : MonoBehaviour
                 cardDeck[num].transform.position = pos;
                 num++;
             }
+        }
+    }
+
+    void OnDrawGizmos() // to make the PairAmount and Width , Height equals and not causing errors
+    {
+        if(pairAmount*2 != width * height)
+        {
+            Debug.Log("Error : width * height should be pairAmount * 2"); 
         }
     }
 }
