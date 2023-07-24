@@ -12,6 +12,9 @@ public class CardManager : MonoBehaviour
 
     public List<GameObject> cardDeck = new List<GameObject>();
 
+    public int width;
+    public int height;
+
     void Start()
     {
         CreatePlayerField();
@@ -37,7 +40,25 @@ public class CardManager : MonoBehaviour
         for (int i = 0; i < cardDeck.Count; i++)
         {
             int index = Random.Range(0, cardDeck.Count);
-            cardDeck[index] = cardDeck[i];
+            var temp = cardDeck[i];
+            cardDeck[i] =  cardDeck[index] ;
+            cardDeck[index] = temp;
+        }
+
+
+        // Pass out cards on the field
+
+        int num = 0;
+
+        for(int x = 0; x < width; x++)
+        {
+            for (int z = 0; z < height; z++)
+            {
+
+                Vector3 pos = new Vector3(x * offset, 0 , z * offset);
+                cardDeck[num].transform.position = pos;
+                num++;
+            }
         }
     }
 }
