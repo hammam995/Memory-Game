@@ -29,4 +29,29 @@ public class CardManagerEditor : Editor
         spriteAmount = _spriteList.arraySize;
     }
 
+    public override void OnInspectorGUI()
+    {
+        manager.Update();
+        EditorGUILayout.BeginVertical(GUI.skin.box);
+        GUI.enabled = false;
+        EditorGUILayout.PropertyField(_pairAmount);
+        GUI.enabled = true;
+        EditorGUILayout.PropertyField(_width);
+        EditorGUILayout.PropertyField(_height);
+        // calculating the pairs amount
+        float tmp = _width.intValue * (float)_height.intValue / 2;
+        _pairAmount.intValue = (int)System.Math.Ceiling(tmp);
+
+
+        // To make the pairs equal the sprites amount we have
+        if(_pairAmount.intValue > spriteAmount)
+        {
+            EditorGUILayout.HelpBox("To much Card Pairs", MessageType.Error);
+        }
+
+        EditorGUILayout.EndVertical();
+
+        manager.ApplyModifiedProperties();
+        DrawDefaultInspector();
+    }
 }
