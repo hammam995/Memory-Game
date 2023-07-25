@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CardManager : MonoBehaviour
 {
-    public int pairAmount; // if 4 then we will have 8 cards in  the field ;
+    [HideInInspector] public int pairAmount; // if 4 then we will have 8 cards in  the field ;
     public Sprite[] spriteList;
 
     float offset = 1.2f; // Offset between cards
@@ -12,8 +12,8 @@ public class CardManager : MonoBehaviour
 
     public List<GameObject> cardDeck = new List<GameObject>();
 
-    public int width;
-    public int height;
+    [HideInInspector] public int width;
+    [HideInInspector] public int height;
 
     void Start()
     {
@@ -69,13 +69,15 @@ public class CardManager : MonoBehaviour
 
     void OnDrawGizmos() // to make the PairAmount and Width , Height equals and not causing errors
     {
-        if(pairAmount*2 != width * height)
+
+        for (int x = 0; x < width; x++)
         {
-            Debug.Log("Error : width * height should be pairAmount * 2"); 
-        }
-        if(pairAmount > spriteList.Length) // if the pairs*2 bigger or no equall to previous condition
-        {
-            Debug.Log("To much Pairs");
+            for (int z = 0; z < height; z++)
+            {
+
+                Vector3 pos = new Vector3(x * offset, 0, z * offset);
+                Gizmos.DrawWireCube(pos, new Vector3(1, 0.1f, 1));
+            }
         }
     }
 }

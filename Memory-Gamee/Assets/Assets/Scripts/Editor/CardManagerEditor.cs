@@ -49,6 +49,19 @@ public class CardManagerEditor : Editor
             EditorGUILayout.HelpBox("To much Card Pairs", MessageType.Error);
         }
 
+        if (_width.intValue < 0)
+        {
+            _width.intValue = 0;
+        }
+
+        if(_height.intValue < 0)
+        {
+            _height.intValue = 0;
+        }
+
+
+
+
         EditorGUILayout.EndVertical();
 
         manager.ApplyModifiedProperties();
