@@ -59,9 +59,6 @@ public class CardManagerEditor : Editor
             _height.intValue = 0;
         }
 
-
-
-
         EditorGUILayout.EndVertical();
 
         manager.ApplyModifiedProperties();

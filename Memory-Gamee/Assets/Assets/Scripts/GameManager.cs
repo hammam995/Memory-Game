@@ -73,7 +73,10 @@ public class GameManager : MonoBehaviour
 
     }
 
-
+    public void GameOver()
+    {
+        Debug.Log("Woops we Lost");
+    }
 
     public bool HasPicked()
     {
