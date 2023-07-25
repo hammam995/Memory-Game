@@ -17,6 +17,9 @@ public class CardManager : MonoBehaviour
 
     void Start()
     {
+
+        GameManager.instance.SetPairs(pairAmount);
+
         CreatePlayerField();
     }
 

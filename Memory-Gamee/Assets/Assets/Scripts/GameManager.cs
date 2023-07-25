@@ -10,6 +10,9 @@ public class GameManager : MonoBehaviour
 
     List<Card> pickedCards = new List<Card>();
 
+    int pairs;
+
+    int pairCounter;
 
     private void Awake()
     {
@@ -37,21 +40,45 @@ public class GameManager : MonoBehaviour
             // We have a match
             pickedCards[0].gameObject.SetActive(false);
             pickedCards[1].gameObject.SetActive(false);
+
+            pairCounter++;
+            CheckForWin();
         }
         else
         {
             pickedCards[0].FlipOpen(false);
             pickedCards[1].FlipOpen(false);
+            yield return new WaitForSeconds(1.5f);
         }
-        yield return new WaitForSeconds(1.5f);
         // clean up
         picked = false;
         pickedCards.Clear();
     }
+
+    void CheckForWin()
+    {
+        if(pairs == pairCounter)
+        {
+
+            // We won
+            Debug.Log("YAY WE WON");
+
+        }
+
+    }
+
+
+
     public bool HasPicked()
     {
         return picked;
     }
 
+    public void SetPairs(int pairAmount)
+    {
+
+        pairs = pairAmount;
+
+    }
 
 }
