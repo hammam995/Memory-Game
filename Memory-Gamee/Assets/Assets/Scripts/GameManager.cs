@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     int pairs;
     int pairCounter;
     public bool hideMatches;
+    
 
     private void Awake()
     {
