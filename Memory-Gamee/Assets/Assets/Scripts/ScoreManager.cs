@@ -11,12 +11,16 @@ public class ScoreManager : MonoBehaviour
     public Image timeImage;
 
     public TMP_Text timeText;
+    public TMP_Text scoreText;
+
+
+    int score;
 
     void Start()
     {
 
         StartCoroutine("Timer");
-
+        AddScore(0);
     }
 
 
@@ -31,15 +35,14 @@ public class ScoreManager : MonoBehaviour
             timeImage.fillAmount = tempTime / (float)timeForLevelToComplete; // currentTime/maxTime
             // fill anount (0,1) so we use slash /
             timeText.text = tempTime.ToString();
-
-
-
-
-
-
-
         }
         // Game Over
         GameManager.instance.GameOver();
+    }
+
+    public void AddScore(int scoreToAdd)
+    {
+        score += scoreToAdd;
+        scoreText.text = score.ToString("D8"); // number has 8 decimal length
     }
 }
