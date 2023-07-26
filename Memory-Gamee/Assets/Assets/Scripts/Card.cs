@@ -7,6 +7,7 @@ public class Card : MonoBehaviour
     int cardId;
     public SpriteRenderer cardFront;
     public Animator anim;
+    public GameObject fxConfetti;
 
     public void SetCard(int _id, Sprite _sprite)
     {
@@ -24,6 +25,14 @@ public class Card : MonoBehaviour
     public int GetCardId()
     {
         return cardId;
+    }
+
+
+    public void ActivateConfetti()
+    {
+
+        fxConfetti.SetActive(true);
+
     }
 
 

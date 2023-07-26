@@ -54,6 +54,10 @@ public class GameManager : MonoBehaviour
             pairCounter++;
             CheckForWin();
 
+            // Activate VFX
+            pickedCards[0].ActivateConfetti();
+            pickedCards[1].ActivateConfetti();
+            // Score
             ScoreManager.instance.AddScore(scorePerMatch);
 
 
