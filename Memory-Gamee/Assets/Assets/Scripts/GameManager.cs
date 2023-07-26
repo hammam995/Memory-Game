@@ -67,6 +67,10 @@ public class GameManager : MonoBehaviour
         // clean up
         picked = false;
         pickedCards.Clear();
+
+        ScoreManager.instance.AddTurn();
+
+
     }
 
     void CheckForWin()

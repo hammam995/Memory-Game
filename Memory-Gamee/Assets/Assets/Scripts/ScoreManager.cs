@@ -14,9 +14,12 @@ public class ScoreManager : MonoBehaviour
 
     public TMP_Text timeText;
     public TMP_Text scoreText;
+    public TMP_Text TurnText;
 
 
     int score;
+
+    int turns;
 
     void Awake()
     {
@@ -51,4 +54,10 @@ public class ScoreManager : MonoBehaviour
         score += scoreToAdd;
         scoreText.text = score.ToString("D8"); // number has 8 decimal length
     }
+    public void AddTurn()
+    {
+        turns++;
+        TurnText.text = turns.ToString("D2");
+    }
+
 }
