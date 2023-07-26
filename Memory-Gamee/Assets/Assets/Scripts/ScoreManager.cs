@@ -7,6 +7,8 @@ using TMPro;
 public class ScoreManager : MonoBehaviour
 {
 
+    public static ScoreManager instance;
+
     public int timeForLevelToComplete = 60;
     public Image timeImage;
 
@@ -16,6 +18,10 @@ public class ScoreManager : MonoBehaviour
 
     int score;
 
+    void Awake()
+    {
+        instance = this;
+    }
     void Start()
     {
 

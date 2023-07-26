@@ -10,7 +10,10 @@ public class GameManager : MonoBehaviour
     int pairs;
     int pairCounter;
     public bool hideMatches;
+
+    public int scorePerMatch = 100; 
     
+
 
     private void Awake()
     {
@@ -49,6 +52,11 @@ public class GameManager : MonoBehaviour
             }
             pairCounter++;
             CheckForWin();
+
+            ScoreManager.instance.AddScore(scorePerMatch);
+
+
+
         }
         else
         {

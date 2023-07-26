@@ -652,6 +652,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hideMatches: 0
+  scorePerMatch: 100
 --- !u!114 &992194084
 MonoBehaviour:
   m_ObjectHideFlags: 0
