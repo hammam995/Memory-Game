@@ -11,7 +11,7 @@ public class PlayerInput : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && !GameManager.instance.HasPicked())
+        if (Input.GetMouseButtonDown(0) && !GameManager.instance.HasPicked() && !GameManager.instance.GameisOver()) // if we have game over the input will not play
         {
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);

@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     bool picked; // Set this true if we have 2 cards
+    bool gameOver;
     List<Card> pickedCards = new List<Card>();
     int pairs;
     int pairCounter;
@@ -87,6 +88,7 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
+        gameOver = true;
         Debug.Log("Woops we Lost");
     }
 
@@ -94,6 +96,12 @@ public class GameManager : MonoBehaviour
     {
         return picked;
     }
+
+    public bool GameisOver()
+    {
+        return gameOver;
+    }
+
 
     public void SetPairs(int pairAmount)
     {
