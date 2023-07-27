@@ -532,7 +532,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 184966215}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 992194085}
+        m_TargetAssemblyTypeName: MenuButtons, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Menu
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &184966215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6904,6 +6916,7 @@ GameObject:
   - component: {fileID: 992194082}
   - component: {fileID: 992194083}
   - component: {fileID: 992194084}
+  - component: {fileID: 992194085}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -7000,6 +7013,18 @@ MonoBehaviour:
   timeText: {fileID: 200153813}
   scoreText: {fileID: 871924627}
   TurnText: {fileID: 979796820}
+--- !u!114 &992194085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992194079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f4f0b973ae937b44ba600fda99bd757, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1064054364
 GameObject:
   m_ObjectHideFlags: 0
@@ -64367,7 +64392,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1935668990}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 992194085}
+        m_TargetAssemblyTypeName: MenuButtons, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Menu
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1935668990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64489,7 +64526,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1991647159}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 992194085}
+        m_TargetAssemblyTypeName: MenuButtons, Assembly-CSharp
+        m_MethodName: Restartlevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1991647159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69448,7 +69497,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2048447213}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 992194085}
+        m_TargetAssemblyTypeName: MenuButtons, Assembly-CSharp
+        m_MethodName: Restartlevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2048447213
 MonoBehaviour:
   m_ObjectHideFlags: 0
