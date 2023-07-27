@@ -16,6 +16,7 @@ public class ScoreManager : MonoBehaviour
     public TMP_Text scoreText;
     public TMP_Text TurnText;
 
+    Coroutine timer;
 
     int score;
 
@@ -27,8 +28,8 @@ public class ScoreManager : MonoBehaviour
     }
     void Start()
     {
-
-        StartCoroutine("Timer");
+        timer = StartCoroutine(Timer());
+       // StartCoroutine("Timer");
         AddScore(0);
     }
 
@@ -58,6 +59,14 @@ public class ScoreManager : MonoBehaviour
     {
         turns++;
         TurnText.text = turns.ToString("D2");
+    }
+
+
+    public void StopTimer()
+    {
+
+        StopCoroutine(timer);
+
     }
 
 }

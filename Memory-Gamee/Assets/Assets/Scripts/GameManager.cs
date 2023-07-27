@@ -84,6 +84,7 @@ public class GameManager : MonoBehaviour
         {
 
             // We won
+            ScoreManager.instance.StopTimer();
             Debug.Log("YAY WE WON");
 
         }
