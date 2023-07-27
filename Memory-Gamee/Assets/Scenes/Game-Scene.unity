@@ -971,7 +971,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 588e19d503a973046ae220326d81a25f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pairAmount: 4
+  pairAmount: 6
   spriteList:
   - {fileID: 928413973, guid: 49059a54785f1bc4dbbaf4354c9ab762, type: 3}
   - {fileID: 560280196, guid: 49059a54785f1bc4dbbaf4354c9ab762, type: 3}
@@ -985,8 +985,8 @@ MonoBehaviour:
   - {fileID: 2129526407, guid: 49059a54785f1bc4dbbaf4354c9ab762, type: 3}
   cardPrefab: {fileID: 6874200177520237084, guid: 138fffa02a68f324c963e29a7e0615c2, type: 3}
   cardDeck: []
-  width: 2
-  height: 4
+  width: 4
+  height: 3
 --- !u!114 &992194083
 MonoBehaviour:
   m_ObjectHideFlags: 0
