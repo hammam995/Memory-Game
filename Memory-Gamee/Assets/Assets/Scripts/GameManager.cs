@@ -11,14 +11,24 @@ public class GameManager : MonoBehaviour
     int pairs;
     int pairCounter;
     public bool hideMatches;
+    public int scorePerMatch = 100;
 
-    public int scorePerMatch = 100; 
+
+    public GameObject winPanel;
+    public GameObject losePanel;
+    public GameObject winEffect;
+
     
-
-
     private void Awake()
     {
         instance = this;
+    }
+
+    private void Start()
+    {
+        winPanel.SetActive(false);
+        losePanel.SetActive(false);
+        winEffect.SetActive(false);
     }
 
 
@@ -84,6 +94,8 @@ public class GameManager : MonoBehaviour
         {
 
             // We won
+            winPanel.SetActive(true);
+            winEffect.SetActive(true);
             ScoreManager.instance.StopTimer();
             Debug.Log("YAY WE WON");
 
@@ -94,6 +106,7 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         gameOver = true;
+        losePanel.SetActive(true);
         Debug.Log("Woops we Lost");
     }
 

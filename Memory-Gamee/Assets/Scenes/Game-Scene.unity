@@ -140,7 +140,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &35823494
 RectTransform:
   m_ObjectHideFlags: 0
@@ -427,7 +427,7 @@ GameObject:
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &136723310
 Transform:
   m_ObjectHideFlags: 0
@@ -6695,7 +6695,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &974882209
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6980,6 +6980,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hideMatches: 0
   scorePerMatch: 100
+  winPanel: {fileID: 35823493}
+  losePanel: {fileID: 974882208}
+  winEffect: {fileID: 136723309}
 --- !u!114 &992194084
 MonoBehaviour:
   m_ObjectHideFlags: 0
