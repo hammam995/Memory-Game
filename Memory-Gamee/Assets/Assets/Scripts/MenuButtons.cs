@@ -5,8 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class MenuButtons : MonoBehaviour
 {
-
-
     public void LoadScene(string sceneToload)
     {
         SceneManager.LoadScene(sceneToload);
@@ -18,14 +16,9 @@ public class MenuButtons : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-
-
-
     public void LoadUrl()
     {
-
         Application.OpenURL("https://linktr.ee/hamamzahran");
-
     }
 
 }

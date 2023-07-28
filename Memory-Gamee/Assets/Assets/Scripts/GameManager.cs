@@ -34,6 +34,10 @@ public class GameManager : MonoBehaviour
 
     public void AddCardToPickedlist(Card card)
     {
+        if (pickedCards.Contains(card)) // to avoid pressing 2 times on the same card if we already had one we exit
+        {
+            return;
+        }
         pickedCards.Add(card);
         if(pickedCards.Count == 2)
         {
@@ -92,22 +96,19 @@ public class GameManager : MonoBehaviour
     {
         if(pairs == pairCounter)
         {
-
             // We won
             winPanel.SetActive(true);
             winEffect.SetActive(true);
             ScoreManager.instance.StopTimer();
-            Debug.Log("YAY WE WON");
-
+         //   Debug.Log("YAY WE WON");
         }
-
     }
 
     public void GameOver()
     {
         gameOver = true;
         losePanel.SetActive(true);
-        Debug.Log("Woops we Lost");
+       // Debug.Log("Woops we Lost");
     }
 
     public bool HasPicked()
@@ -123,9 +124,7 @@ public class GameManager : MonoBehaviour
 
     public void SetPairs(int pairAmount)
     {
-
         pairs = pairAmount;
-
     }
 
 

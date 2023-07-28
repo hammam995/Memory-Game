@@ -7,15 +7,11 @@ using UnityEditor;
 [CustomEditor(typeof(CardManager))]
 public class CardManagerEditor : Editor
 {
-
-
     SerializedObject manager;
     SerializedProperty _pairAmount;
     SerializedProperty _width;
     SerializedProperty _height;
     SerializedProperty _spriteList;
-
-
     int spriteAmount;
     float w, h;
 
@@ -41,7 +37,6 @@ public class CardManagerEditor : Editor
         // calculating the pairs amount
         float tmp = _width.intValue * (float)_height.intValue / 2;
         _pairAmount.intValue = (int)System.Math.Ceiling(tmp);
-
 
         // To make the pairs equal the sprites amount we have
         if(_pairAmount.intValue > spriteAmount)

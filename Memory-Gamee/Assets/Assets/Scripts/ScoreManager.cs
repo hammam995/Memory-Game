@@ -6,20 +6,14 @@ using TMPro;
 
 public class ScoreManager : MonoBehaviour
 {
-
     public static ScoreManager instance;
-
     public int timeForLevelToComplete = 60;
     public Image timeImage;
-
     public TMP_Text timeText;
     public TMP_Text scoreText;
     public TMP_Text TurnText;
-
     Coroutine timer;
-
     int score;
-
     int turns;
 
     void Awake()
@@ -32,7 +26,6 @@ public class ScoreManager : MonoBehaviour
        // StartCoroutine("Timer");
         AddScore(0);
     }
-
 
     IEnumerator Timer()
     {
@@ -61,12 +54,9 @@ public class ScoreManager : MonoBehaviour
         TurnText.text = turns.ToString("D2");
     }
 
-
     public void StopTimer()
     {
-
         StopCoroutine(timer);
-
     }
 
 }

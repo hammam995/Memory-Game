@@ -11,6 +11,8 @@ public class PlayerInput : MonoBehaviour
 
     void Update()
     {
+
+
         if (Input.GetMouseButtonDown(0) && !GameManager.instance.HasPicked() && !GameManager.instance.GameisOver()) // if we have game over the input will not play
         {
             RaycastHit hit;
@@ -21,9 +23,16 @@ public class PlayerInput : MonoBehaviour
                 Debug.Log(hit.transform.gameObject);
 
                 Card currentCard = hit.transform.GetComponent<Card>();
-                currentCard.FlipOpen(true);
+                if (currentCard != null)//ADD NULL CHECK HERE
+                {
+                    currentCard.FlipOpen(true);
+                    GameManager.instance.AddCardToPickedlist(currentCard);
+                }
 
-                GameManager.instance.AddCardToPickedlist(currentCard);
+                /* Card currentCard = hit.transform.GetComponent<Card>();
+                 currentCard.FlipOpen(true);
+
+                 GameManager.instance.AddCardToPickedlist(currentCard);*/
             }
         }
     }

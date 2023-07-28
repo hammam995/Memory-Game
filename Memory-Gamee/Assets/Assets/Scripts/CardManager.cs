@@ -6,37 +6,27 @@ public class CardManager : MonoBehaviour
 {
     [HideInInspector] public int pairAmount; // if 4 then we will have 8 cards in  the field ;
     public List<Sprite> spriteList = new List<Sprite>();
-
     float offset = 1.2f; // Offset between cards
     public GameObject cardPrefab;
-
     public List<GameObject> cardDeck = new List<GameObject>();
-
     [HideInInspector] public int width;
     [HideInInspector] public int height;
 
     void Start()
     {
-
         GameManager.instance.SetPairs(pairAmount);
-
         CreatePlayerField();
     }
 
 
     void CreatePlayerField()
     {
-
         List<Sprite> tempSprites = new List<Sprite>(); // we will do all the operations from the temprarly list and not touching the original one
         tempSprites.AddRange(spriteList); // to add all the elements from the main list to the temp list
 
-
-
         for ( int i = 0; i<pairAmount; i++)
         {
-
             int randSpriteIndex = Random.Range(0, tempSprites.Count);
-
             for (int j = 0; j < 2; j++) // this loop to decide how many time we want to repeat the card
             {
                 Vector3 pos = Vector3.zero;
@@ -46,7 +36,6 @@ public class CardManager : MonoBehaviour
                 cardDeck.Add(newCard);
             }
             tempSprites.RemoveAt(randSpriteIndex); // in every iterate we choose randomly from the index in the lest , and from the choosen index we remove it , so we don't select it again
-
         }
 
 
@@ -58,10 +47,8 @@ public class CardManager : MonoBehaviour
             cardDeck[i] =  cardDeck[index] ;
             cardDeck[index] = temp;
         }
-
         // Pass out cards on the field
         int num = 0;
-
         for(int x = 0; x < width; x++)
         {
             for (int z = 0; z < height; z++)
@@ -74,14 +61,8 @@ public class CardManager : MonoBehaviour
         }
     }
 
-
-
-
-   
-
     void OnDrawGizmos() // to make the PairAmount and Width , Height equals and not causing errors
     {
-
         for (int x = 0; x < width; x++)
         {
             for (int z = 0; z < height; z++)
