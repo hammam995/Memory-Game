@@ -17,4 +17,15 @@ public class MenuButtons : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+
+
+
+
+    public void LoadUrl()
+    {
+
+        Application.OpenURL("https://linktr.ee/hamamzahran");
+
+    }
+
 }
