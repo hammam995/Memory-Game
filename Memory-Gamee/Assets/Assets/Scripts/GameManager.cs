@@ -100,7 +100,6 @@ public class GameManager : MonoBehaviour
             winPanel.SetActive(true);
             winEffect.SetActive(true);
             ScoreManager.instance.StopTimer();
-         //   Debug.Log("YAY WE WON");
         }
     }
 
@@ -108,7 +107,6 @@ public class GameManager : MonoBehaviour
     {
         gameOver = true;
         losePanel.SetActive(true);
-       // Debug.Log("Woops we Lost");
     }
 
     public bool HasPicked()
